@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url(bloosom.jpg);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        .signup-container {
+            background: #fff;
+            padding: 2.5rem 2rem;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(252, 182, 159, 0.2);
+            width: 370px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .signup-container h2 {
+            margin-bottom: 1.5rem;
+            color: #fcb69f;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .signup-container input[type="text"],
+        .signup-container input[type="email"],
+        .signup-container input[type="password"] {
+            width: 90%;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border 0.2s;
+        }
+        .signup-container input:focus {
+            border: 1.5px solid #fcb69f;
+            outline: none;
+        }
+        .signup-container button {
+            width: 100%;
+            padding: 0.8rem;
+            background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .signup-container button:hover {
+            background: linear-gradient(90deg, #fcb69f 0%, #ffecd2 100%);
+        }
+        .signup-container .links {
+            margin-top: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 0.95rem;
+        }
+        .signup-container .links a {
+            color: #fcb69f;
+            text-decoration: none;
+            transition: text-decoration 0.2s;
+        }
+        .signup-container .links a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 400px) {
+            .signup-container {
+                width: 95vw;
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Create Account</button>
+        </form>
+        <div class
